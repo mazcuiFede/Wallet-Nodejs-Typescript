@@ -12,6 +12,9 @@ import loadContainer from './container'
 
 const app: express.Application = express()
 
+//JSON Support
+app.use(express.json())
+
 //container
 loadContainer(app)
 
